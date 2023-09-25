@@ -50,13 +50,14 @@
         <div class="col-md-6 d-flex align-items-center justify-content-center">
             <div class="card custom-font border-0" style="background-color: #F5F5DC;">
                 <div class="card-body text-center">
-                    <h1 class="card-title">Bienvenido a Historia Interactiva</h1>                    
+                    <h1 class="card-title pb-3">Bienvenido a Historia Interactiva</h1>                    
                     <p class="card-text">Aquí podrás explorar emocionantes historias personalizadas, en las que tú serás el protagonista.</p>
                     <p class="card-text">Hoy te ofrecemos un cuento clásico, que trata de un reino gobernado por l@s gat@s, con la ayuda de una Inteligencia Artificial 
                     que dirige a un ejército de robots. Sus aliados son l@s elefant@s, que habitan en un reino próximo. Y sus enemigos naturales son l@s raton@s, a quienes pertenecían las tierras 
-                    en la antigüedad. Nuestro protagonista es un@ pequeñ@ elefant@ recién llegado al reino de l@s gat@s. Las decisiones que tome, decidirán el futuro
-                    del mundo que conocen, para bien o para mal. ¿Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
-                    <p class="card-text">Por favor, regístrate o inicia sesión para comenzar la aventura..¡Vamos a ello!</p>
+                    en la antigüedad.</p>
+                    <p class="card-text"> Nuestro protagonista es un@ pequeñ@ elefant@ recién llegado al reino de l@s gat@s. Las decisiones que tome, decidirán el futuro del mundo que conocen, para bien o para mal. 
+                        ¿Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
+                    <p class="card-text" style="color: #4169E1;">Por favor, regístrate o inicia sesión para comenzar la aventura. ¡Vamos a ello!</p>
                 </div>
             </div>
         </div>
