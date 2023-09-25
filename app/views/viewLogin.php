@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <link rel="stylesheet" href="../../public/css/style.css">
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 d-flex align-items-center justify-content-center custom-div">
@@ -58,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <label for="name" class="form-label d-inline-block mb-1">Usuario:</label>
                     </div>
                     <div class="col-md-9">
-                        <input type="text" class="form-control d-inline-block" id="name" name="name" required>
+                        <input type="text" class="form-control d-inline-block" id="name" name="name" placeholder="Introduce tu nombre" required>
                     </div>
                 </div>
 
@@ -68,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <label for="password" class="form-label d-inline-block mb-1">Contraseña:</label>
                     </div>
                     <div class="col-md-8">
-                        <input type="password" class="form-control d-inline-block" name="password" id="password" required>  
+                        <input type="password" class="form-control d-inline-block" name="password" id="password" placeholder="Introduce tu contraseña" required>  
                     </div>                    
                 </div>
 
