@@ -1,0 +1,18 @@
+.custom-font {
+    font-family: 'EB Garamond', serif;
+}
+
+.card-title {
+    color: #4169E1;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size:18px;
+    font-weight: bold;    
+    color: #b58c0a;
+}
+
+.navbar, footer {
+    font-family: 'Mulish', sans-serif;    
+}
