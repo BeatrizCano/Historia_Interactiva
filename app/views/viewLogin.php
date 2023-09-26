@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="d-grid">
-                    <input type="submit" class="btn btn-primary" value="Iniciar Sesión">
+                    <input type="submit" class="btn" value="Iniciar Sesión" style="background-color: #4169E1; color: #ffffff;>
                 </div>
             </form>
         </div>
