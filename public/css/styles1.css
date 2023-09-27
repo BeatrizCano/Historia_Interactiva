@@ -8,6 +8,10 @@
     overflow: hidden; /* Esto evita que la imagen se desborde */
 }
 
+.card-title {
+    color: #ff8fbd;
+}
+
 .card .card-img {
     object-fit: cover; /* Esto hace que la imagen cubra todo el espacio de la tarjeta sin deformarse */
     width: 100%;
@@ -26,10 +30,14 @@
 
 .card .card-title,
 .card .card-text {
-    font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
     text-align: justify; /* Justifica el texto para que se asemeje a una página impresa */
-    color: #fff; /* Color de texto oscuro */
+}
+
+.card,
+.card .card-text {
+    font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
+    color: #fffaf2; 
 }
 
 .card .card-text {
@@ -56,3 +64,7 @@
     font-family: 'Mulish', sans-serif;    
 }
 
+.text-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
