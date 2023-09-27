@@ -1,7 +1,7 @@
      <!--Enlace de bootstrap-->
      
      <footer>
-        <div class="container-fluid bg-light text-center p-3 mt-3">
+        <div class="container-fluid bg-light text-center p-3">
             <span class="small">©Copyright 2023, Historia Interactiva</span>
         </div>
     </footer>
