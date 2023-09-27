@@ -30,24 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include ("../../templates/head.php");
 ?>
 
-<link rel="stylesheet" href="../../public/css/style.css">
+<link rel="stylesheet" href="../../public/css/styles1.css">
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 d-flex align-items-center justify-content-center custom-div">
-            <div class="card custom-font mt-3 border-0" style="background-color: #F5F5DC;">
-                <img src="../../assets/img/wallpapers/photo-book-1318702_1920.png" class="img-fluid custom-image" style="height: 80vh;" alt="...">
-            </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-    <div class="card custom-font border-0" style="background-color: #F5F5DC;">
+<div class="card bg-dark text-white">
+    <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">  
+        
+    
+    <div class="custom-font border-0 login-container" >
         <div class="card-body text-center">
-
-            <h1 class="mb-5 custom-font card-title">Iniciar Sesión</h1>
-
-            <div class="col-md-12 mx-auto">
+            <h1 class="mb-3 custom-font card-title text-center">Iniciar Sesión</h1>
 
             <form action="viewLogin.php" method="POST">
+
                 <div class="alert <?php echo (!empty($error_message)) ? 'alert-danger' : 'd-none'; ?>" role="alert">
                     <?php if (!empty($error_message)) { ?>
                         <p><?php echo $error_message; ?></p>
@@ -79,22 +74,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="d-grid">
-                    <input type="submit" class="btn" value="Iniciar Sesión" style="background-color: #4169E1; color: #ffffff;>
+                    <input type="submit" class="btn btn-light" value="Iniciar Sesión" style="background-color: #ff8fbd; color: #ffffff;">
                 </div>
             </form>
         </div>
 
-            <p class="mt-3">¿Aún no tienes una cuenta? <a href="./viewRegister.php">Registrarse</a></p>
+        <p class="mt-3 d-inline">¿Aún no tienes una cuenta?</p>
+        <p class="d-inline"><a href="./viewRegister.php" class="card-title">Registrarse</a></p>
+
 
         </div>
     </div>
 </div>
-
-    </div>
 </div>
+</div>   
 
 
-    <?php
-        include ("../../templates/footer.php");
-    ?>
+<?php
+    include ("../../templates/footer.php");
+?>
 
