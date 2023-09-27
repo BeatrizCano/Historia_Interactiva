@@ -33,11 +33,13 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
         <?php } ?>
 
         <h5 class="card-title">Te invitamos a crear tu propia historia interactiva.</h5>
-        <p class="card-text">Ahora que tenemos tus datos, podremos guardar tu sesión y tus preferencias.</p>
-        <p class="card-text">Hablando de eso, ahora vamos a empezar con la parte divertida, necesitamos que nos ayudes a personalizar la historia. <br> 
+        
+        <div class="text-container">        
+        <p class="card-text">Ahora que tenemos tus datos, podremos guardar tu sesión y tus preferencias.
+        Hablando de eso, ahora vamos a empezar con la parte divertida, necesitamos que nos ayudes a personalizar la historia. 
             Rellena el formulario que te mostramos en la siguiente vista, con los datos que quieres que figuren en tu historia.</p>
-            
-        <div class="">
+        </div>
+        <div class="mt-3">
             <input type="button" class="btn-lg btn-light" value="¡Vamos a ello!"  onclick="window.location.href='./viewPersonalizationForm.php'" style="background-color: #8B4513; color: #fff"/>            
         </div>
 
