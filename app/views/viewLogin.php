@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include ("../../templates/head.php");
 ?>
 
-<link rel="stylesheet" href="../../public/css/styles1.css">
+<link rel="stylesheet" href="../../public/css/styles2.css">
 
 <div class="card bg-dark text-white">
     <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     <div class="custom-font border-0 login-container" >
         <div class="card-body text-center">
-            <h1 class="mb-3 custom-font card-title text-center">Iniciar Sesión</h1>
+            <h1 class="mb-3 custom-font card-title text-center">INICIAR SESIÓN</h1>
 
             <form action="viewLogin.php" method="POST">
 
@@ -74,13 +74,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="d-grid">
-                    <input type="submit" class="btn btn-light" value="Iniciar Sesión" style="background-color: #ff8fbd; color: #ffffff;">
+                    <input type="submit" class="btn btn-light" value="Enviar" style="background-color: #e56197; color: #ffffff;">
                 </div>
             </form>
         </div>
 
         <p class="mt-3 d-inline">¿Aún no tienes una cuenta?</p>
-        <p class="d-inline"><a href="./viewRegister.php" class="card-title">Registrarse</a></p>
+        <p class="d-inline"><a href="./viewRegister.php" class="card-text">Registrarse</a></p>
 
 
         </div>
