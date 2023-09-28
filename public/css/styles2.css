@@ -9,7 +9,7 @@
 }
 
 .card-title {
-    color: #ff8fbd;
+    color: #e56197;
 }
 
 .card .card-img {
@@ -70,7 +70,7 @@
 }
 
 .login-container {    
-    background-color: rgba(255, 255, 255, 0.1); /* Color blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.3); /* Color blanco semitransparente */
     padding: 20px; /* Ajusta el relleno según tu preferencia */
     border-radius: 20px; /* Ajusta el radio del borde según tu preferencia */     
     margin-bottom: 20px;   
