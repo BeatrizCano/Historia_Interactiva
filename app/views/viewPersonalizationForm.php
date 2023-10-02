@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="../../public/css/styles2.css">
     
 </head>
 <body>
@@ -23,7 +24,7 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="../../index.php">Inicio</a>
             <a class="nav-link" href="../../app/views/viewRegister.php">Registrarse</a>
             <a class="nav-link" href="../../app/views/viewLogin.php">Iniciar Sesión</a>           
@@ -32,39 +33,128 @@
         </div>
     </div>
     </nav>
-    <form action="viewPersonalizationForm.php" method="POST">
-       
-        <label for="historia_id">Selecciona una historia:</label>
-        <select name="historia_id">
-            <option value="1">Historia 1</option>
-            <!-- Agrega más opciones para futuras historias -->
-             <!--<option value="2">Historia 2</option>-->
-        </select><br><br>
 
-        <label for="protagonist">Nombre del Protagonista:</label>
-        <input type="text" name="protagonist" required><br><br>
+        <div class="card bg-dark text-white">
+            <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">          
+        
+        <div class="custom-font border-0 login-container mt-3" >
+            <div class="card-body text-center">
+                <h1 class="mb-3 custom-font card-title text-center">Introduce los datos de personalización</h1>
 
-        <label for="best_friend">Nombre del Mejor Amig@:</label>
-        <input type="text" name="best_friend" required><br><br>
 
-        <label for="worst_enemy">Nombre del Peor Enemig@:</label>
-        <input type="text" name="worst_enemy" required><br><br>
+                <form action="viewPersonalizationForm.php" method="POST">
 
-        <label for="favorite_food">Comida Favorita:</label>
-        <input type="text" name="favorite_food" required><br><br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="">
+                        <div class="card-body">
+                        <div class="mb-3 text-start row align-items-center">  
+                            <div class="col-md-3">      
+                                <label for="historia_id" class="form-label d-inline-block mb-1" >Selecciona una historia:</label>
+                            </div>
+                            <div class="col-md-9"> 
+                                <select name="historia_id" class="form-control d-inline-block">
+                                    <option value="1">Historia 1</option>
+                                    <option value="2">Historia 2</option>
+                                </select>
+                            </div>                        
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>                 
+                    
 
-        <label for="favorite_color">Color Favorito:</label>
-        <input type="text" name="favorite_color" required><br><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="">
+                            <div class="card-body">
 
-        <label for="favorite_number">Número Favorito:</label>
-        <input type="number" name="favorite_number" required><br><br>
+                                <div class="mb-3 text-start row align-items-center">
+                                    <div class="col-md-4"> 
+                                        <label for="protagonist" class="form-label d-inline-block mb-1">Nombre del Protagonista:</label>
+                                    </div>    
+                                    <div class="col-md-8">
+                                        <input type="text" name="protagonist" class="form-control d-inline-block" required>
+                                    </div>
+                                </div>
 
-        <input type="submit" value="Enviar">
-    </form>
-    <br>
-    <!-- Agregar un botón de "Editar" que redirige a la vista de edición -->
-    <p>Haz click en el enlace para editar los datos de la personalización: <a href="viewEditForm.php">Editar</a> </p>  
-    
+                                <div class="mb-3 text-start row align-items-center">  
+                                    <div class="col-md-4">
+                                        <label for="worst_enemy" class="form-label d-inline-block mb-1">Nombre del Peor Enemig@:</label>
+                                    </div>  
+                                    <div class="col-md-8">
+                                        <input type="text" name="worst_enemy" class="form-control d-inline-block" required>
+                                    </div>                          
+                                </div>
+
+ 		                        <div class="mb-3 text-start row align-items-center">
+                                    <div class="col-md-4 "> 
+                                        <label for="favorite_food" class="form-label d-inline-block mb-1">Comida Favorita:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" name="favorite_food" class="form-control d-inline-block" required>
+                                    </div>
+                                </div>                  
+                    
+
+                   
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="">
+                            <div class="card-body">
+
+                                <div class="mb-3 text-start row align-items-center">
+                                    <div class="col-md-4">    
+                                        <label for="best_friend" class="form-label d-inline-block mb-1">Nombre del Mejor Amig@:</label>
+                                    </div>
+                                    <div class="col-md-8"> 
+                                        <input type="text" name="best_friend" class="form-control d-inline-block" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 text-start row align-items-center">
+                                    <div class="col-md-4"> 
+                                        <label for="favorite_color" class="form-label d-inline-block mb-1">Dinos tu color Favorito:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" name="favorite_color" class="form-control d-inline-block" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 text-start row align-items-center">
+                                    <div class="col-md-4">
+                                        <label for="favorite_number" class="form-label d-inline-block mb-1">Número Favorito:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="number" name="favorite_number" class="form-control d-inline-block" required>
+                                    </div>
+                                </div>                             
+
+
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-light" value="Enviar" style="background-color: #e56197; color: #ffffff;">
+                    </div>
+                    
+
+                </form>
+                
+                <!-- Agregar un botón de "Editar" que redirige a la vista de edición -->
+                <p>Haz click en el enlace para editar los datos de la personalización: <a href="viewEditForm.php" class="card-text">Editar</a> </p> 
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
     <?php 
 
     if(isset($_POST["protagonist"], $_POST["best_friend"], $_POST["worst_enemy"], $_POST["favorite_food"], $_POST["favorite_color"], $_POST["favorite_number"], $_POST["historia_id"])) {
@@ -81,20 +171,13 @@
         personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
 
         // Redirigir al usuario a la vista view_story.php
-        header("Location: ../views/viewAfterPersonalizationForm.php");
-    
+        header("Location: ../views/viewAfterPersonalizationForm.php");   
         
-    }    
+    }   
     ?>
-    <!--Fuente de letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
-    <!--Fuente de letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
+    
     <?php
     include ("../../templates/footer.php");
     ?>
+     
     
