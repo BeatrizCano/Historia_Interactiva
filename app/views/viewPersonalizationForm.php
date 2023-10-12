@@ -2,6 +2,28 @@
      include ("../controllers/StoryController.php");
      session_start();
 ?>
+
+<?php 
+
+    if(isset($_POST["protagonist"], $_POST["best_friend"], $_POST["worst_enemy"], $_POST["favorite_food"], $_POST["favorite_color"], $_POST["favorite_number"], $_POST["historia_id"])) {
+        $protagonist = $_POST["protagonist"];
+        $bestFriend = $_POST["best_friend"];
+        $worstEnemy = $_POST["worst_enemy"];
+        $favoriteFood = $_POST["favorite_food"];
+        $favoriteColor = $_POST["favorite_color"];
+        $favoriteNumber = $_POST["favorite_number"];
+        $historiaId = $_POST["historia_id"];
+        
+        // para almacenar la sesión de usuario
+        $usuarioId = $_SESSION['usuario_id'];
+        personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
+
+        // Redirigir al usuario a la vista view_story.php
+        header("Location: ../views/viewAfterPersonalizationForm.php");   
+        
+    }
+?>
+    
 <!--No quitar el encabezado html aquí por el header del formulario, da fallos con el include del head-->
 <!DOCTYPE html>
 <html lang="es">
@@ -14,7 +36,7 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
         <img src="../../assets/img/logoPaper.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -63,7 +85,7 @@
                         </div>
                         </div>
                     </div>
-                </div>                 
+                </div>             
                     
 
                     <div class="row">
@@ -155,26 +177,7 @@
         </div>
         
         
-    <?php 
-
-    if(isset($_POST["protagonist"], $_POST["best_friend"], $_POST["worst_enemy"], $_POST["favorite_food"], $_POST["favorite_color"], $_POST["favorite_number"], $_POST["historia_id"])) {
-        $protagonist = $_POST["protagonist"];
-        $bestFriend = $_POST["best_friend"];
-        $worstEnemy = $_POST["worst_enemy"];
-        $favoriteFood = $_POST["favorite_food"];
-        $favoriteColor = $_POST["favorite_color"];
-        $favoriteNumber = $_POST["favorite_number"];
-        $historiaId = $_POST["historia_id"];
-        
-        // para almacenar la sesión de usuario
-        $usuarioId = $_SESSION['usuario_id'];
-        personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
-
-        // Redirigir al usuario a la vista view_story.php
-        header("Location: ../views/viewAfterPersonalizationForm.php");   
-        
-    }   
-    ?>
+    
     
     <?php
     include ("../../templates/footer.php");
