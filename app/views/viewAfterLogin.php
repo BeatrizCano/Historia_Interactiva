@@ -12,14 +12,9 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 }
 ?>
 
-
-
-
 <?php
     include ("../../templates/head.php");
 ?>
-
-    <link rel="stylesheet" href="../../public/css/styles2.css">
 
    
     <div class="card bg-dark text-white">
