@@ -30,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include ("../../templates/head.php");
 ?>
 
-<link rel="stylesheet" href="../../public/css/styles2.css">
 
 <div class="card bg-dark text-white">
     <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
