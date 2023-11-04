@@ -9,7 +9,11 @@
 }
 
 .card-title {
-    color: #e56197;
+    color: #e7dc3b;
+}
+
+.text-subtitle {
+    color: #67312E;
 }
 
 .card .card-img {
@@ -37,7 +41,7 @@
 .card,
 .card .card-text {
     font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
-    color: #fffaf2; 
+     color: #fffaf2;  
 }
 
 .card .card-text {
@@ -70,8 +74,17 @@
 }
 
 .login-container {    
-    background-color: rgba(255, 255, 255, 0.3); /* Color blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.2); /* Color blanco semitransparente */
     padding: 20px; /* Ajusta el relleno según tu preferencia */
     border-radius: 20px; /* Ajusta el radio del borde según tu preferencia */     
     margin-bottom: 20px;   
+}
+
+.ornament_img {
+    max-width: 25%; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 2.5rem;
 }
