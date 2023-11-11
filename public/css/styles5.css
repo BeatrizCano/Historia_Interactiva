@@ -12,10 +12,6 @@
     color: #e7dc3b;
 }
 
-.text-subtitle {
-    color: #67312E;
-}
-
 .card .card-img {
     object-fit: cover; /* Esto hace que la imagen cubra todo el espacio de la tarjeta sin deformarse */
     width: 100%;
@@ -52,6 +48,9 @@
     margin-bottom: 0; /* Elimina el espacio después del último párrafo */
 }
 
+.card-color-green {
+    color: #61e577;
+}
 
 /*.card-title {
     color: #4169E1;
@@ -80,6 +79,13 @@
     margin-bottom: 20px;   
 }
 
+.login-container-history {
+    background-color: rgba(17, 8, 8, 0.5); /* Color blanco semitransparente */
+    padding: 20px; /* Ajusta el relleno según tu preferencia */
+    border-radius: 20px; /* Ajusta el radio del borde según tu preferencia */     
+    margin-bottom: 20px;   
+}
+
 .ornament_img {
     max-width: 25%; 
     position: absolute; 
@@ -88,3 +94,6 @@
     transform: translateX(-50%);
     margin-top: 2.5rem;
 }
+
+
+

@@ -34,8 +34,8 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
         Hablando de eso, ahora vamos a empezar con la parte divertida, necesitamos que nos ayudes a personalizar la historia. 
             Rellena el formulario que te mostramos en la siguiente vista, con los datos que quieres que figuren en tu historia.</p>
         </div>
-        <div class="mt-3">
-            <input type="button" class="btn btn-light" value="Comenzar"  onclick="window.location.href='./viewPersonalizationForm.php'" style="background-color: #ff8fbd; color: #fff"/>            
+        <div class="mt-3 d-grid">
+            <input type="button" class="btn btn-light"  value="Comenzar"  onclick="window.location.href='./viewPersonalizationForm.php'" style="background-color: #e56197; color: #ffffff;"/>            
         </div>
 
     </div>

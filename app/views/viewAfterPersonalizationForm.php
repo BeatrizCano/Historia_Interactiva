@@ -60,7 +60,7 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
  
         <div>
             <h3>¡Gracias por personalizar tu historia!</h3>
-            <p class="card-title text-center">Ahora te mostraremos brevemente las elecciones que has tomado:</p>
+            <p class="text-center">Ahora te mostraremos brevemente las elecciones que has tomado:</p>
         </div>   
 
     
@@ -72,21 +72,27 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12"> 
-                                    <label class="form-label d-inline-block mb-1">Nombre del Protagonista: <?php echo $protagonistName; ?></label>
+                                <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Nombre del Protagonista:</span> <?php echo $protagonistName; ?>
+                                </label>
                                 </div>  
                                 <div></div>                                 
                             </div>
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12">                                    
-                                    <label class="form-label d-inline-block mb-1">Nombre de su Mejor Amig@: <?php echo $bestFriendName; ?></label>
+                                    <label class="form-label d-inline-block mb-1">
+                                        <span class="card-title">Nombre de su Mejor Amig@:</span> <?php echo $bestFriendName; ?>
+                                    </label>
                                 </div> 
                                 <div></div>    
                             </div>
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12"> 
-                                    <label class="form-label d-inline-block mb-1">Su color Favorito: <?php echo $favoriteColor; ?></label>
+                                    <label class="form-label d-inline-block mb-1">
+                                        <span class="card-title">Su color Favorito:</span> <?php echo $favoriteColor; ?>
+                                    </label>
                                 </div> 
                                 <div></div>    
                             </div>
@@ -101,21 +107,24 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12"> 
-                                    <label class="form-label d-inline-block mb-1"> Nombre de su Enemig@: <?php echo $enemyName; ?></label>
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Nombre de su Enemig@:</span> <?php echo $enemyName; ?></label>
                                 </div>  
                                 <div></div>                              
                             </div>
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12"> 
-                                    <label class="form-label d-inline-block mb-1">Su Comida Favoríta: <?php echo $favoriteFood; ?></label>
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Su Comida Favoríta:</span> <?php echo $favoriteFood; ?></label>
                                 </div> 
                                 <div></div>     
                             </div>
 
                             <div class="mb-3 text-start row align-items-center">
                                 <div class="col-md-12"> 
-                                    <label class="form-label d-inline-block mb-1">Su Número Favorito: <?php echo $favoriteNumber; ?></label>
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Su Número Favorito:</span> <?php echo $favoriteNumber; ?></label>
                                 </div>  
                                 <div></div>  
                             </div>
@@ -127,8 +136,8 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
         </section>   
 
     
-    <p>¿Te gustan tus elecciones? Si es así haz click en <a class="card-title" href="./viewHistory.php">¡Comencemos la historia!</a></p>
-    <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-title" href="./viewEditForm.php">Editar</a></p>
+    <p>¿Te gustan tus elecciones? Si es así haz click en <a class="card-color-green" href="./viewHistory.php">¡Comencemos la historia!</a></p>
+    <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-color-green" href="./viewEditForm.php">Editar</a></p>
         
     </div>
         </div>

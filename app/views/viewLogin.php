@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
 
         <p class="mt-3 d-inline">¿Aún no tienes una cuenta?</p>
-        <p class="d-inline"><a href="./viewRegister.php" class="card-text">Registrarse</a></p>
+        <p class="d-inline"><a href="./viewRegister.php" class="card-title">Registrarse</a></p>
 
 
         </div>
