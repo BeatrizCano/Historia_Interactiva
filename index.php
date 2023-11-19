@@ -1,26 +1,15 @@
-<?php
-//session_start();
-?>
+
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/styles4.css">
-    <!--Fuente de letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
-    <!--Fuente de letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./public/css/style5.css">  
 </head>
-<body class="d-flex flex-column min-vh-100" style="background-color: #F5F5DC;">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -40,16 +29,20 @@
         </div>
     </div>
     </nav>
+    
 
-    <div class="card bg-dark text-white">
+    <div class="card bg-dark">
         <img src="./assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
     <div class="card-img-overlay" >
 
     
     <div class="custom-font border-0 login-container " >
         <div class="card-body text-center">
-        <img src="./assets/img/decorative_line.png" class="ornament_img">
-        <h1 class="card-title text-center" style="margin-top: 50px;">Bienvenido a Historia Interactiva</h1> 
+        <div>
+            <img src="./assets/img/decorative_line.png" class="ornament_img">
+        </div>
+        
+        <h1 class="card-title text-center">Bienvenido a Historia Interactiva</h1> 
         <div class="text-container mt-2">                  
 
                     
@@ -64,11 +57,9 @@
         </div>
     </div>
 </div>
-       
+</div>
 
-    <?php
+<?php
         include ("./templates/footer.php");
     ?>
-    <script src="./public/js/script.js"></script>
-</body>
-</html>
+    
