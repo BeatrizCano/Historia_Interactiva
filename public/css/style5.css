@@ -87,13 +87,10 @@
 }
 
 .ornament_img {
-    max-width: 25%; 
-    position: absolute; 
-    top: 0; 
+    max-width: 25%;   
     left: 50%; 
-    transform: translateX(-50%);
-    margin-top: 2.5rem;
+    margin-bottom: -5rem;
+    margin-top: -6rem;
+  
 }
-
-
 
