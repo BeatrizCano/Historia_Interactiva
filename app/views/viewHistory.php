@@ -35,7 +35,7 @@ include ("../../sections/session/sessionStart.php");
                             ?>     
                         </div>
 
-                         <div class="carousel-item">
+                        <div class="carousel-item">
 
                             <form action="viewHistory.php" method="POST">
                                 <h2 class='card-title text-center'>Elige una de las siguientes opciones:</h2>
@@ -43,7 +43,7 @@ include ("../../sections/session/sessionStart.php");
                                 $connection = createConnection("interactive_history");
 
                                 // Para incluir todas las consultas a las tablas y la lógica
-                                include("../../../sections/querys/queryViewOptions.php");
+                                include("../../sections/querys/queryViewOptions.php");
 
                                 // Imprimir todos los textos de opciones
                                 foreach ($optionTexts as $optionText) {
