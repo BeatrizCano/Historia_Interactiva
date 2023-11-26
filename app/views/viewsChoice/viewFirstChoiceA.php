@@ -32,7 +32,7 @@ include ("../../../sections/session/sessionStart.php");
                                 include ("../../../sections/querys/queryViewHistoryChoice.php");
 
                                 // Mostrar el título y contenido de la primera historia
-                                echo "<h1>$storyTitle</h1>";
+                                echo "<h1 class='card-title text-center'>$storyTitle</h1>";
                                 echo "<p>$storyContent</p>";
 
                             ?>     
@@ -42,17 +42,19 @@ include ("../../../sections/session/sessionStart.php");
                         <div class="carousel-item">
 
                             <form action="viewHistory.php" method="POST">
-                                <p>Elige una de las siguientes opciones:</p>
+                                <h2 class='card-title text-center'>Elige una de las siguientes opciones:</h2>
                                 <?php
-                                // Mostrar las opciones disponibles en forma de texto
-                                while ($optionRow = mysqli_fetch_assoc($optionsResult)) {
-                                    $optionId = $optionRow['id_opcion'];
-                                    $optionText = $optionRow['texto'];
-                                    echo "<p><span style='margin-right: 5px;'>•</span>$optionText</p>";
+                                $connection = createConnection("interactive_history");
+
+                                // Para incluir todas las consultas a las tablas y la lógica
+                                include("../../../sections/querys/queryViewOptions.php");
+
+                                // Imprimir todos los textos de opciones
+                                foreach ($optionTexts as $optionText) {
+                                    echo "<p class='text-start'>$optionText</p>";
                                 }
                                 ?>
                             </form>
-                            <br> <!-- Agrega un salto de línea para separar las dos opciones -->
 
                         <div>
                             <form action="viewASecondChoiceA.php" method="POST" style="display: inline-block; margin-right: 10px;">
