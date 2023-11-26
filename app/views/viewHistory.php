@@ -35,7 +35,7 @@ include ("../../sections/session/sessionStart.php");
                             ?>     
                         </div>
 
-                         <div class="carousel-item">
+                        <div class="carousel-item">
 
                             <form action="viewHistory.php" method="POST">
                                 <h2 class='card-title text-center'>Elige una de las siguientes opciones:</h2>
