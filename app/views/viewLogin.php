@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="d-grid">
-                    <input type="submit" class="btn btn-light" value="Enviar" style="background-color: #e56197; color: #ffffff;">
+                    <input type="submit" class="button_general" value="Enviar">
                 </div>
             </form>
         </div>

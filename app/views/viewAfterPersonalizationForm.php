@@ -136,8 +136,8 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
         </section>   
 
     
-    <p>¿Te gustan tus elecciones? Si es así haz click en <a class="card-color-green" href="./viewHistory.php">¡Comencemos la historia!</a></p>
-    <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-color-green" href="./viewEditForm.php">Editar</a></p>
+    <p>¿Te gustan tus elecciones? Si es así haz click en <a class="card-title" href="./viewHistory.php">¡Comenzar la historia!</a></p>
+    <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-title" href="./viewEditForm.php">Editar</a></p>
         
     </div>
         </div>

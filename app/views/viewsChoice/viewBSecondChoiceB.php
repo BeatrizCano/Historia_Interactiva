@@ -18,6 +18,9 @@ include ("../../../sections/session/sessionStart.php");
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+                <div>
+                    <img src="../../../assets/img/Filigrana.png" class="ornament_history_img">
+                </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
@@ -58,11 +61,11 @@ include ("../../../sections/session/sessionStart.php");
                             <div>
                                 <form action="../viewFinals/viewFinalsB/viewFinalBBChoiceA.php" method="POST" style="display: inline-block; margin-right: 10px;">
                                     <input type="hidden" name="chosen_option" value="1">
-                                    <button type="submit">Ir a final A</button>
+                                    <button type="submit" class="button_options">Ir a final A</button>
                                 </form>
                                 <form action="../viewFinals/viewFinalsB/viewFinalBBChoiceB.php" method="POST" style="display: inline-block;">
                                     <input type="hidden" name="chosen_option" value="2">
-                                    <button type="submit">Ir a final B</button>
+                                    <button type="submit" class="button_options">Ir a final B</button>
                                 </form>
                             </div>
                         </div>

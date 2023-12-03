@@ -121,7 +121,7 @@
                             </div>         
             
                     <div class="mb-3">
-                        <input type="submit" class="btn btn-light" value="Guardar cambios" style="background-color: #e56197; color: #ffffff;">
+                        <input type="submit" class="button_general" value="Guardar cambios">
                     </div>    
                 </form>
 
