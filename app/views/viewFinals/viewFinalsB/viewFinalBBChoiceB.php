@@ -17,6 +17,9 @@ include ("../../../../sections/session/sessionStart.php");
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+                <div>
+                    <img src="../../../../assets/img/Filigrana.png" class="ornament_history_img">
+                </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
@@ -32,7 +35,7 @@ include ("../../../../sections/session/sessionStart.php");
                             include ("../../../../sections/querys/queryViewBFinals.php");
 
                             // Mostrar el texto del final A
-                            echo "<h1>¡Final B de la historia!</h1>";
+                            echo "<h1 class='card-title text-center'>Un final inesperado…</h1>";
                             echo "<p>$finalAText</p>";
 
                         ?>

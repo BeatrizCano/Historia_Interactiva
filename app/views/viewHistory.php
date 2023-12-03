@@ -10,13 +10,19 @@ include ("../../sections/session/sessionStart.php");
 <body>
 
 <div class="card bg-dark text-white">
-    <img src="../../assets/img/ilustracion-de-dibujos-animados-de-elefante-bebe.jpg" class="card-img" alt="...">
+    <img src="../../assets/img/wallpapers/ai-generated-8210590_1280.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
-                    <div class="carousel-inner">
+
+                <div>
+                    <img src="../../assets/img/Filigrana.png" class="ornament_history_img">
+                </div>
+
+                    <div class="carousel-inner">                        
                         <div class="carousel-item active">
+                            
 
                             <?php
                             // Incluir tus funciones y archivos necesarios aquí
@@ -55,11 +61,11 @@ include ("../../sections/session/sessionStart.php");
                             <div>
                                 <form action="./viewsChoice/viewFirstChoiceA.php" method="POST" style="display: inline-block; margin-right: 10px;">
                                     <input type="hidden" name="chosen_option" value="1">
-                                    <button type="submit">Ir a Opción A</button>
+                                    <button type="submit" class="button_options">Ir a Opción A</button>
                                 </form>
                                 <form action="./viewsChoice/viewFirstChoiceB.php" method="POST" style="display: inline-block;">
                                     <input type="hidden" name="chosen_option" value="2">
-                                    <button type="submit">Ir a Opción B</button>
+                                    <button type="submit" class="button_options" >Ir a Opción B</button>
                                 </form>
                             </div>                   
                         </div>
@@ -77,6 +83,7 @@ include ("../../sections/session/sessionStart.php");
         </div>
     </div>
 </div>
+
    
 
 <?php
