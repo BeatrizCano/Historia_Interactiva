@@ -12,7 +12,7 @@ include ("../../../sections/session/sessionStart.php");
 <body>
 
 <div class="card bg-dark text-white">
-    <img src="../../../assets/img/ilustracion-de-dibujos-animados-de-elefante-bebe.jpg" class="card-img" alt="...">
+    <img src="../../../assets/img/wallpapers/elephant-1217313_1280.png" class="card-img" alt="...">
     <div class="card-img-overlay">
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">

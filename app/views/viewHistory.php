@@ -10,7 +10,7 @@ include ("../../sections/session/sessionStart.php");
 <body>
 
 <div class="card bg-dark text-white">
-    <img src="../../assets/img/wallpapers/ai-generated-8210590_1280.jpg" class="card-img" alt="...">
+    <img src="../../assets/img/wallpapers/ai-generated-8138068_1280.png" class="card-img" alt="...">
     <div class="card-img-overlay">
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">

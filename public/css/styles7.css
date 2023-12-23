@@ -13,10 +13,10 @@
 }
 
 .card .card-img {
-    object-fit: cover; /* Esto hace que la imagen cubra todo el espacio de la tarjeta sin deformarse */
+    object-fit:contain; /* Esto hace que la imagen cubra todo el espacio de la tarjeta sin deformarse */
     width: 100%;
-    height: 100%;
-    min-height: 1000px;
+    height: 100%;  
+    min-height: 40rem;   
 }
 
 .card .card-img-overlay {
