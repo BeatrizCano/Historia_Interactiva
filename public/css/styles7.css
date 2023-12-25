@@ -1,5 +1,5 @@
 .custom-font {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -68,7 +68,7 @@
 .card,
 .card .card-text {
     font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
-     color: #fffaf2;  
+    color: #fffaf2;  
 }
 
 .card .card-text {
