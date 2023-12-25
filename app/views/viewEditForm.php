@@ -31,7 +31,7 @@
     ?>
 
         <div class="card bg-dark text-white">
-            <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
+            <img src="../../assets/img/wallpapers/girl-7639878_1280.jpg" class="card-img-introduction" alt="...">
         <div class="card-img-overlay">          
         
         <div class="custom-font border-0 login-container mt-3" >

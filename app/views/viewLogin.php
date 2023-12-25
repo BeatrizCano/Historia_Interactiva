@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 <div class="card bg-dark text-white">
-    <img src="../../assets/img/wallpapers/background-image.jpg" class="card-img" alt="...">
+    <img src="../../assets/img/wallpapers/fantasy-4339663_1280.jpg" class="card-img-introduction" alt="...">
     <div class="card-img-overlay">  
         
     
