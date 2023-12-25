@@ -13,7 +13,7 @@ include ("../../../sections/session/sessionStart.php");
 <body>
 
 <div class="card bg-dark text-white">
-    <img src="../../../assets/img/wallpapers/cat-7912462_1280.png" class="card-img" alt="...">
+    <img src="../../../assets/img/wallpapers/kitten-4794761_1280.png" class="card-img-small" alt="...">
     <div class="card-img-overlay">
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body text-center">
