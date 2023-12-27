@@ -43,13 +43,12 @@
     min-height: 45rem;   
 }
 
-
 .card .card-img-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align:left;
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer el texto legible */
 }
@@ -142,4 +141,7 @@
     border: white solid 1px;
     box-shadow:#ffffff;
 }
+
+
+
 

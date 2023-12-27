@@ -16,7 +16,7 @@ include ("../../../sections/session/sessionStart.php");
     <img src="../../../assets/img/wallpapers/kitten-4794761_1280.png" class="card-img-small" alt="...">
     <div class="card-img-overlay">
         <div class="custom-font border-0 login-container-history text-container">
-            <div class="card-body text-center">
+            <div class="card-body">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
                 <div>
                     <img src="../../../assets/img/Filigrana.png" class="ornament_history_img">
@@ -36,6 +36,7 @@ include ("../../../sections/session/sessionStart.php");
 
                                 // Mostrar el título y contenido de la primera historia
                                 echo "<h1 class='card-title text-center'>$storyTitle</h1>";
+                                $storyContent = str_replace('\n', '<br>', $storyContent);
                                 echo "<p>$storyContent</p>";
                             ?>     
 

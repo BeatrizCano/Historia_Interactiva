@@ -36,7 +36,8 @@ include ("../../../sections/session/sessionStart.php");
 
                                 // Mostrar el título y contenido de la primera historia
                                 echo "<h1 class='card-title text-center'>$storyTitle</h1>";
-                                echo "<p>$storyContent</p>";
+                                $storyContent = str_replace('\n', '<br>', $storyContent);
+                                echo "<p class='text-start'>$storyContent</p>";
 
                             ?>     
 
