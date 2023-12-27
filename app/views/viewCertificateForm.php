@@ -14,7 +14,7 @@
 
         <div class="mb-4 text-start row align-items-center">        
             <div class="col-md-7">
-                <label for="name" class=" d-inline-block mb-1 card-title  text-certificate">Introduce tu nombre para el certificado:</label>
+                <label for="name" class=" d-inline-block mb-1 card-title">Introduce tu nombre para el certificado:</label>
             </div>
             <div class="col-md-5">
                 <input type="text" name="name" class="form-control d-inline-block" placeholder="Introduce tu nombre" required>
