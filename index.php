@@ -32,7 +32,7 @@
     
 
     <div class="card bg-dark">
-        <img src="./assets/img/wallpapers/background-image.jpg" class="card-img-introduction" alt="...">
+        <img src="./assets/img/wallpapers/background-balcon.jpg" class="card-img-introduction" alt="...">
     <div class="card-img-overlay" >
 
     

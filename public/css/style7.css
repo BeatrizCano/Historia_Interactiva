@@ -43,13 +43,12 @@
     min-height: 45rem;   
 }
 
-
 .card .card-img-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align:left;
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer el texto legible */
 }
@@ -58,11 +57,6 @@
 .card .card-text {
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
     text-align: justify; /* Justifica el texto para que se asemeje a una página impresa */
-}
-
-.text-certificate {
-    font-size:18px;
-    font-weight:bolder;
 }
 
 .card,
@@ -147,4 +141,3 @@
     border: white solid 1px;
     box-shadow:#ffffff;
 }
-
