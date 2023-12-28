@@ -35,6 +35,7 @@ include ("../../../../sections/session/sessionStart.php");
 
                                 // Mostrar el texto del final A
                                 echo "<h1 class='card-title text-center'>Un final inesperado...</h1>";
+                                $finalAText = str_replace('\n', '<br>', $finalAText);
                                 echo "<p>$finalAText</p>";
 
                             ?>  
