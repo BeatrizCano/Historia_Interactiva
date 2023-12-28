@@ -57,11 +57,12 @@
 .card .card-text {
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
     text-align: justify; /* Justifica el texto para que se asemeje a una página impresa */
+    
 }
 
 .card,
 .card .card-text {
-    font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
+    font-size: 15px; /* Ajusta el tamaño de fuente según tu preferencia */
     color: #fffaf2;  
 }
 
@@ -115,9 +116,9 @@
     max-width: 25%;   
     left: 50%; 
     margin-bottom: -5rem;
-    margin-top: -6rem;
-  
+    margin-top: -6rem;  
 }
+
 .ornament_history_img {
     max-width: 20%;   
     left: 50%; 

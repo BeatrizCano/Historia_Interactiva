@@ -18,8 +18,8 @@ include ("../../../sections/session/sessionStart.php");
         <div class="custom-font border-0 login-container-history text-container">
             <div class="card-body">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
-                <div>
-                    <img src="../../../assets/img/Filigrana.png" class="ornament_history_img">
+                <div class="d-flex justify-content-center">
+                    <img src="../../../assets/img/decorative_line.png" class="ornament_img">
                 </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -54,12 +54,13 @@ include ("../../../sections/session/sessionStart.php");
 
                                 // Imprimir todos los textos de opciones
                                 foreach ($optionTexts as $optionText) {
-                                    echo "<p class='text-start'>$optionText</p>";
+                                    $optionText = str_replace('\n', '<br>',  $optionText);
+                                    echo "<p>$optionText</p>";
                                 }
                                 ?>
                             </form>
 
-                            <div>
+                            <div class="d-flex justify-content-center">
                                 <form action="../viewFinals/viewFinalsB/viewFinalBBChoiceA.php" method="POST" style="display: inline-block; margin-right: 10px;">
                                     <input type="hidden" name="chosen_option" value="1">
                                     <button type="submit" class="button_options">Ir a final A</button>
@@ -72,14 +73,16 @@ include ("../../../sections/session/sessionStart.php");
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
-                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="d-flex justify-content-center">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
