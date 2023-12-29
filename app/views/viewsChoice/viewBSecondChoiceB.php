@@ -37,7 +37,7 @@ include ("../../../sections/session/sessionStart.php");
                                 // Mostrar el título y contenido de la primera historia
                                 echo "<h1 class='card-title text-center'>$storyTitle</h1>";
                                 $storyContent = str_replace('\n', '<br>', $storyContent);
-                                echo "<p>$storyContent</p>";
+                                echo "<p class='text-start'>$storyContent</p>";
                             ?>     
 
                         </div>
@@ -55,7 +55,7 @@ include ("../../../sections/session/sessionStart.php");
                                 // Imprimir todos los textos de opciones
                                 foreach ($optionTexts as $optionText) {
                                     $optionText = str_replace('\n', '<br>',  $optionText);
-                                    echo "<p>$optionText</p>";
+                                    echo "<p class='text-start'>$optionText</p>";
                                 }
                                 ?>
                             </form>
