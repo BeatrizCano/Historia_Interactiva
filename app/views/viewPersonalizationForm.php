@@ -1,32 +1,29 @@
 <?php
-     include ("../controllers/StoryController.php");
-     session_start();
+include ("../controllers/StoryController.php");
+session_start();
 ?>
 
 <?php 
-
-    if(isset($_POST["protagonist"], $_POST["best_friend"], $_POST["worst_enemy"], $_POST["favorite_food"], $_POST["favorite_color"], $_POST["favorite_number"], $_POST["historia_id"])) {
-        $protagonist = $_POST["protagonist"];
-        $bestFriend = $_POST["best_friend"];
-        $worstEnemy = $_POST["worst_enemy"];
-        $favoriteFood = $_POST["favorite_food"];
-        $favoriteColor = $_POST["favorite_color"];
-        $favoriteNumber = $_POST["favorite_number"];
-        $historiaId = $_POST["historia_id"];
+if(isset($_POST["protagonist"], $_POST["best_friend"], $_POST["worst_enemy"], $_POST["favorite_food"], $_POST["favorite_color"], $_POST["favorite_number"], $_POST["historia_id"])) {
+    $protagonist = $_POST["protagonist"];
+    $bestFriend = $_POST["best_friend"];
+    $worstEnemy = $_POST["worst_enemy"];
+    $favoriteFood = $_POST["favorite_food"];
+    $favoriteColor = $_POST["favorite_color"];
+    $favoriteNumber = $_POST["favorite_number"];
+    $historiaId = $_POST["historia_id"];
         
-        // para almacenar la sesión de usuario
-        $usuarioId = $_SESSION['usuario_id'];
-        personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
+    $usuarioId = $_SESSION['usuario_id'];
+    personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
 
-        // Redirigir al usuario a la vista view_story.php
-        header("Location: ../views/viewAfterPersonalizationForm.php");   
+    header("Location: ../views/viewAfterPersonalizationForm.php");   
         
-    }
+}
 ?>
     
-    <?php
-    include ("../../templates/head.php");
-    ?>
+<?php
+include ("../../templates/head.php");
+?>
 
 
         <div class="card bg-dark text-white">

@@ -1,10 +1,8 @@
-<!-- view_login.php -->
 <?php
-
 include ("../controllers/StoryController.php");
 session_start();
 
-$error_message = ""; // Variable para almacenar el mensaje de error
+$error_message = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
@@ -26,8 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 
@@ -90,6 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 <?php
-    include ("../../templates/footer.php");
+include ("../../templates/footer.php");
 ?>
 

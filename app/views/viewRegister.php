@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 </div>
 
-    <?php
-        include ("../../templates/footer.php");
-    ?>
+<?php
+include ("../../templates/footer.php");
+?>
 

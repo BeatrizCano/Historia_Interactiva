@@ -2,7 +2,6 @@
 
 function createConnection($database) {
     
-   // Datos de conexión
 	$host = "localhost";
 	$user = "root";
 	$password = "";

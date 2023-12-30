@@ -1,8 +1,6 @@
 <?php
 include ("../controllers/StoryController.php");
 session_start();
-
-// Iniciar sesión
 if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
     $usuarioId = $_SESSION['usuario_id'];
     $nombreUsuario = $_SESSION['nombre_usuario'];
@@ -13,36 +11,31 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 ?>
 
 <?php
-    // Obtener la primera historia de la tabla historias
-    $connection = createConnection("interactive_history");
-
-    // Obtener los datos de personalización del usuario desde la tabla personalizacion_historia
-    $userId = $_SESSION['usuario_id'];
-    $personalizationSql = "SELECT nombre_protagonista, nombre_mejor_amigo, nombre_enemigo, comida_favorita, color_favorito, numero_favorito
-     FROM personalizacion_historia WHERE usuario_id = ?";
-    $stmt = mysqli_prepare($connection, $personalizationSql);
-    mysqli_stmt_bind_param($stmt, "i", $userId);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
+$connection = createConnection("interactive_history");
+$userId = $_SESSION['usuario_id'];
+$personalizationSql = "SELECT nombre_protagonista, nombre_mejor_amigo, nombre_enemigo, comida_favorita, color_favorito, numero_favorito
+FROM personalizacion_historia WHERE usuario_id = ?";
+$stmt = mysqli_prepare($connection, $personalizationSql);
+mysqli_stmt_bind_param($stmt, "i", $userId);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
     
-    if ($result && mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_assoc($result);
-        $protagonistName = $row['nombre_protagonista'];
-        $bestFriendName = $row['nombre_mejor_amigo'];
-        $enemyName = $row['nombre_enemigo'];
-        $favoriteFood = $row['comida_favorita'];
-        $favoriteColor = $row['color_favorito'];
-        $favoriteNumber = $row['numero_favorito'];
-    } else {
-        // Manejar el caso en que no se encuentren datos de personalización
-    }
-    mysqli_stmt_close($stmt);
-    
-    // Resto de tu código...
+if ($result && mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    $protagonistName = $row['nombre_protagonista'];
+    $bestFriendName = $row['nombre_mejor_amigo'];
+    $enemyName = $row['nombre_enemigo'];
+    $favoriteFood = $row['comida_favorita'];
+    $favoriteColor = $row['color_favorito'];
+    $favoriteNumber = $row['numero_favorito'];
+} else {
+        
+}
+mysqli_stmt_close($stmt);
 ?>
 
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 <div class="card bg-dark text-white">
@@ -140,9 +133,9 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
     <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-title" href="./viewEditForm.php">Editar</a></p>
         
     </div>
-        </div>
-        </div>
-        </div>  
+</div>
+</div>
+</div>  
        
 
 <?php

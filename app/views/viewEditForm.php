@@ -1,34 +1,30 @@
 <?php
-    include ("../controllers/StoryController.php");
-    session_start();
+include ("../controllers/StoryController.php");
+session_start();
 
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // Procesar y guardar los datos modificados
-        $usuarioId = $_SESSION['usuario_id'];
-        $protagonist = $_POST["protagonist"];
-        $bestFriend = $_POST["best_friend"];
-        $worstEnemy = $_POST["worst_enemy"];
-        $favoriteFood = $_POST["favorite_food"];
-        $favoriteColor = $_POST["favorite_color"];
-        $favoriteNumber = $_POST["favorite_number"];
-        $historiaId = $_POST["historia_id"];
-        
-        // Actualizar los datos de personalización en la base de datos
-        updatePersonalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
-
-        // Redirigir de nuevo a la vista de formulario con los datos actualizados
-        header("Location: viewAfterPersonalizationForm.php");
-        exit();
-    }
-
-    // Obtener los datos actuales de personalización
+if ($_SERVER["REQUEST_METHOD"] === "POST") {       
     $usuarioId = $_SESSION['usuario_id'];
-    $datosPersonalizacion = getPersonalizationData($usuarioId);
+    $protagonist = $_POST["protagonist"];
+    $bestFriend = $_POST["best_friend"];
+    $worstEnemy = $_POST["worst_enemy"];
+    $favoriteFood = $_POST["favorite_food"];
+    $favoriteColor = $_POST["favorite_color"];
+    $favoriteNumber = $_POST["favorite_number"];
+    $historiaId = $_POST["historia_id"];
+        
+        
+    updatePersonalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
+    header("Location: viewAfterPersonalizationForm.php");
+    exit();
+}
+
+$usuarioId = $_SESSION['usuario_id'];
+$datosPersonalizacion = getPersonalizationData($usuarioId);
 ?>
 
-    <?php
-        include ("../../templates/head.php");
-    ?>
+<?php
+include ("../../templates/head.php");
+?>
 
         <div class="card bg-dark text-white">
             <img src="../../assets/img/wallpapers/girl-7639878_1280.jpg" class="card-img-introduction" alt="...">
@@ -38,9 +34,7 @@
             <div class="card-body text-center">
                 <h1 class="mb-3 custom-font card-title text-center">Edición de Personalización</h1>
 
-
                 <form action="viewEditForm.php" method="POST">
-
                     
                     <div class="mb-3 text-start row align-items-center">
                         <div class="col-md-4"> 
@@ -52,7 +46,6 @@
                         <div class="col-sm-6">
                             <div class="">
                             <div class="card-body">
-
 
                                 <div class="mb-3 text-start row align-items-center">
                                     <div class="col-md-4"> 
@@ -126,13 +119,13 @@
                 </form>
 
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
+    </div>
+</div>
         
     
-    <?php
-        include ("../../templates/footer.php");
-    ?>
+<?php
+include ("../../templates/footer.php");
+?>
     
 

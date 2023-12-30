@@ -1,6 +1,5 @@
 
 <?php
-
 session_start();
 
 if (isset($_SESSION['usuario_id'])) {
@@ -9,5 +8,4 @@ if (isset($_SESSION['usuario_id'])) {
 } else {
     echo "La clave 'usuario_id' no está definida en la sesión.";
 }
-
 ?>

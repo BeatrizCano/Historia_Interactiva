@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/style8.css">  
@@ -28,13 +26,11 @@
         </div>
         </div>
     </div>
-    </nav>
-    
+    </nav>    
 
     <div class="card bg-dark">
         <img src="./assets/img/wallpapers/background-balcon.jpg" class="card-img-introduction" alt="...">
     <div class="card-img-overlay" >
-
     
     <div class="custom-font border-0 login-container " >
         <div class="card-body text-center">
@@ -43,9 +39,8 @@
         </div>
         
         <h1 class="card-title text-center">Bienvenido a Historia Interactiva</h1> 
-        <div class="text-container mt-2">                  
+        <div class="text-container mt-2">                
 
-                    
                 <p class="card-text">Aquí podrás explorar emocionantes historias personalizadas, en las que tú serás el protagonista.</p>
                 <p class="card-text">Hoy te ofrecemos un cuento clásico, que trata de un reino gobernado por l@s gat@s, con la ayuda de una Inteligencia Artificial 
                     que dirige a un ejército de robots. Sus aliados son l@s elefant@s, que habitan en un reino próximo. Y sus enemigos naturales son l@s raton@s, a quienes pertenecían las tierras 
@@ -66,6 +61,6 @@
 </div>
 
 <?php
-        include ("./templates/footer.php");
-    ?>
+include ("./templates/footer.php");
+?>
     

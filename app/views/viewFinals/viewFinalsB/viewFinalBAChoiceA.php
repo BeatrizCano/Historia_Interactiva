@@ -1,13 +1,10 @@
 <?php
 include ("../../../../config/Database.php");
-
-//incluir el archivo de inicio de sesión
 include ("../../../../sections/session/sessionStart.php");
-
 ?>
 
 <?php
-    include ("../../../../templates/headViewsFinals.php");
+include ("../../../../templates/headViewsFinals.php");
 ?>
 
 <body>
@@ -24,22 +21,13 @@ include ("../../../../sections/session/sessionStart.php");
                         <div class="carousel-inner">
                             <div class="carousel-item active">
     
-                              <?php
-                                // Incluir tus funciones y archivos necesarios aquí
-
-                                // Obtener el final A de la historia 4 de la tabla finales
-                                $connection = createConnection("interactive_history");
-                                // Obtener el final A de la historia 4 de la tabla finales
-                                $storyId = 6; // Cambia esto por el ID de la historia que deseas obtener
-
-                                  //Para incluir todas las consultas a las tablas y la lógica
-                                  include ("../../../../sections/querys/queryViewAFinals.php");
-
-                                  // Mostrar el texto del final A
-                                  echo "<h1 class='card-title text-center'>Un final inesperado…</h1>";
-                                  $finalAText = str_replace('\n', '<br>', $finalAText);
-                                  echo "<p class='text-start'>$finalAText</p>";
-
+                                <?php                               
+                                $connection = createConnection("interactive_history");                                
+                                $storyId = 6; 
+                                include ("../../../../sections/querys/queryViewAFinals.php");
+                                echo "<h1 class='card-title text-center'>Un final inesperado…</h1>";
+                                $finalAText = str_replace('\n', '<br>', $finalAText);
+                                echo "<p class='text-start'>$finalAText</p>";
                                 ?> 
                                 
                             </div>
@@ -69,7 +57,7 @@ include ("../../../../sections/session/sessionStart.php");
        
     
     <?php
-        include ("../../../../templates/footer.php");
+    include ("../../../../templates/footer.php");
     ?>  
         
     

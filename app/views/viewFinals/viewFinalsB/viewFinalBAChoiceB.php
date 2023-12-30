@@ -1,12 +1,11 @@
 <?php
 include ("../../../../config/Database.php");
-//incluir el archivo de inicio de sesión
 include ("../../../../sections/session/sessionStart.php");
 
 ?>
 
 <?php
-    include ("../../../../templates/headViewsFinals.php");
+include ("../../../../templates/headViewsFinals.php");
 ?>
 
 <body>
@@ -24,20 +23,12 @@ include ("../../../../sections/session/sessionStart.php");
                             <div class="carousel-item active">
     
                             <?php
-                                // Incluir tus funciones y archivos necesarios aquí
-
-                                // Obtener el final A de la historia 4 de la tabla finales
-                                $connection = createConnection("interactive_history");
-                                // Obtener el final A de la historia 4 de la tabla finales
-                                $storyId = 6; // Cambia esto por el ID de la historia que deseas obtener
-
-                                //Para incluir todas las consultas a las tablas y la lógica
-                                include ("../../../../sections/querys/queryViewBFinals.php");
-
-                                // Mostrar el texto del final A
-                                echo "<h1 class='card-title text-center'>Un final inesperado…</h1>";
-                                $finalAText = str_replace('\n', '<br>', $finalAText);
-                                echo "<p class='text-start'>$finalAText</p>";
+                            $connection = createConnection("interactive_history");                               
+                            $storyId = 6; 
+                            include ("../../../../sections/querys/queryViewBFinals.php");
+                            echo "<h1 class='card-title text-center'>Un final inesperado…</h1>";
+                            $finalAText = str_replace('\n', '<br>', $finalAText);
+                            echo "<p class='text-start'>$finalAText</p>";
                             ?> 
     
                             </div>
@@ -48,7 +39,7 @@ include ("../../../../sections/session/sessionStart.php");
                                     Recuerda que si quieres seguir probando más opciones, puedes volver al inicio y volver a comenzar la historia. 
                                     Cómo premio, te hacemos entrega de tu certificado de participación. ¡Estamos muy orgullos@s!</p>
                                 <h3><a class="card-title" href="../../viewCertificateForm.php">Ir a certificado</a></h3>                            
-                                <br> <!-- Agrega un salto de línea para separar las dos opciones -->
+                                <br> 
                             </div>
                         </div>
                     </div>
@@ -67,7 +58,7 @@ include ("../../../../sections/session/sessionStart.php");
        
     
     <?php
-        include ("../../../../templates/footer.php");
+    include ("../../../../templates/footer.php");
     ?>  
         
     

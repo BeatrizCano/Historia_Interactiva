@@ -1,8 +1,6 @@
 <?php
 include ("../controllers/StoryController.php");
 session_start();
-
-// Iniciar sesión
 if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
     $usuarioId = $_SESSION['usuario_id'];
     $nombreUsuario = $_SESSION['nombre_usuario'];
@@ -13,7 +11,7 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 ?>
 
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
     <div class="card bg-dark text-white">
@@ -49,5 +47,5 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 </div>
 
 <?php
-    include ("../../templates/footer.php");
+include ("../../templates/footer.php");
 ?>

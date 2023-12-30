@@ -22,13 +22,14 @@ include ("../../../../templates/headViewsFinals.php");
                         <div class="carousel-item active">
 
                             <?php                            
-                                $connection = createConnection("interactive_history");                              
-                                $storyId = 4; 
-                                include ("../../../../sections/querys/queryViewAFinals.php");
-                                echo "<h1 class='card-title text-center'>Un final inesperado...</h1>";
-                                $finalAText = str_replace('\n', '<br>', $finalAText);
-                                echo "<p class='text-start'>$finalAText</p>";
+                            $connection = createConnection("interactive_history");                              
+                            $storyId = 4; 
+                            include ("../../../../sections/querys/queryViewAFinals.php");
+                            echo "<h1 class='card-title text-center'>Un final inesperado...</h1>";
+                            $finalAText = str_replace('\n', '<br>', $finalAText);
+                            echo "<p class='text-start'>$finalAText</p>";
                             ?>  
+
                         </div>
 
                         <div class="carousel-item mt-3">
@@ -58,7 +59,7 @@ include ("../../../../templates/headViewsFinals.php");
    
 
 <?php
-    include ("../../../../templates/footer.php");
+include ("../../../../templates/footer.php");
 ?>  
     
 

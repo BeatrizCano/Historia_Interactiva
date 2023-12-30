@@ -7,13 +7,10 @@
  $result = mysqli_stmt_get_result($stmt);
  
  if ($result && mysqli_num_rows($result) > 0) {
-     // Obtener los datos de la primera historia
      $row = mysqli_fetch_assoc($result);
      $storyId= $row['id_historia'];
      $storyTitle = $row['titulo'];
      $storyContent = $row['contenido'];
- 
-     // Obtener los datos de personalización del usuario desde la tabla personalizacion_historia
      $userId = $_SESSION['usuario_id'];
      $personalizationSql = "SELECT nombre_protagonista, nombre_mejor_amigo, nombre_enemigo, comida_favorita, color_favorito, numero_favorito
       FROM personalizacion_historia WHERE usuario_id = ?";
@@ -25,8 +22,6 @@
      mysqli_stmt_close($stmt);
 
  
-     //  Crea un arreglo $replacementscon los marcadores y sus valores correspondientes,
-     // y luego itera a través de ese arreglo para reemplazar los marcadores en el contenido y el título.
      $replacements = array(
          '[nombre_protagonista]' => $protagonistName,
          '[nombre_mejor_amigo]' => $bestFriendName,
@@ -42,7 +37,6 @@
      }       
      
 
-     // Obtener las opciones de la historia actual
      $optionsSql = "SELECT id_opcion, texto FROM opciones WHERE id_historia = ? LIMIT 2";
      $stmtOptions = mysqli_prepare($connection, $optionsSql);
      mysqli_stmt_bind_param($stmtOptions, "i", $storyId);
@@ -50,10 +44,6 @@
      $optionsResult = mysqli_stmt_get_result($stmtOptions);
      mysqli_stmt_close($stmtOptions);
 
-     //está en las vistas (lo dejé comentado por si acaso) 
-       // Mostrar el título y contenido de la primera historia
-        //echo "<h1>$storyTitle</h1>";
-         //echo "<p>$storyContent</p>";
 
  }
  else {
