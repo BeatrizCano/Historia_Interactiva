@@ -7,7 +7,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/styles8.css">  
+    <link rel="stylesheet" href="./public/css/style8.css">  
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,8 +51,14 @@
                     que dirige a un ejército de robots. Sus aliados son l@s elefant@s, que habitan en un reino próximo. Y sus enemigos naturales son l@s raton@s, a quienes pertenecían las tierras 
                     en la antigüedad.</p>
                 <p class="card-text"> Nuestro protagonista es un@ pequeñ@ elefant@ recién llegado al reino de l@s gat@s. Las decisiones que tome, decidirán el futuro del mundo que conocen, para bien o para mal. 
-                    Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
-                <p class="card-text">Por favor, regístrate o inicia sesión para comenzar la aventura.¡Vamos a ello!</p>
+                    ¿Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
+                <p class="card-text">
+                    Por favor, 
+                    <a href="./app/views/viewRegister.php" class="card-title">regístrate</a>
+                    o 
+                    <a href="./app/views/viewLogin.php" class="card-title">inicia sesión</a> 
+                    para comenzar la aventura.¡Vamos a ello!
+                </p>
             </div> 
         </div>
     </div>
