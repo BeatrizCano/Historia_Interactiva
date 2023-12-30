@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;   
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer el texto legible */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para hacer el texto legible */
 }
 
 .card .card-title,
@@ -105,7 +105,7 @@
 }
 
 .login-container-history {
-    background-color: rgba(17, 8, 8, 0.5); /* Color blanco semitransparente */
+    background-color: rgba(17, 8, 8, 0.8); /* Color blanco semitransparente */
     padding: 20px; /* Ajusta el relleno según tu preferencia */
     border-radius: 20px; /* Ajusta el radio del borde según tu preferencia */     
     margin-bottom: 20px;   
@@ -127,10 +127,11 @@
 }
 
 .button_options {
-    border-radius: 10px; 
+    border-radius: 5px; 
     padding: 5px 10px;
-    border: 1px;
+    border:#ec5c09 solid 1px;
     box-shadow: #ffffff;
+   
 }
 
 .button_general {
@@ -142,4 +143,10 @@
     box-shadow:#ffffff;
 }
 
-
+.button_certificate {
+    border-radius: 5px; 
+    padding: 5px 10px;
+    border: #e56197 solid 1px;
+    box-shadow: #ffffff;
+   
+}

@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../public/css/styles.css">
-    <link rel="stylesheet" href="../../../public/css/styles8.css">
+    <link rel="stylesheet" href="../../../public/css/style8.css">
     <!--Fuente de letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,8 @@
         <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="../../../index.php">Inicio</a>
             <a class="nav-link" href="../viewRegister.php">Registrarse</a>
-            <a class="nav-link" href="../viewLogin.php">Iniciar Sesión</a>            
+            <a class="nav-link" href="../viewLogin.php">Iniciar Sesión</a>   
+            <a class="nav-link" href="../viewEditForm.php">Editar personalización</a>         
             <a class="nav-link" href="../../../sections/session/logout.php">Cerrar Sesión</a>           
         </div>
         </div>
