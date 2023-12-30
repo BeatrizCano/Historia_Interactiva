@@ -13,16 +13,6 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 ?>
 
 <?php
-    include ("../../templates/head.php");
-?>
-
-    <?php if (isset($mensajeBienvenida)) { ?>
-        <h1><?php echo $mensajeBienvenida; ?></h1>
-    <?php } else { ?>
-        <h1>¡Eso ha estado genial!</h1>
-    <?php } ?>
-
-<?php
     // Obtener la primera historia de la tabla historias
     $connection = createConnection("interactive_history");
 
@@ -51,20 +41,109 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
     // Resto de tu código...
 ?>
 
-    <h3>¡Gracias por personalizar tu historia!</h3>
-    <p>Ahora te mostraremos brevemente las elecciones que has tomado:</p>
+<?php
+    include ("../../templates/head.php");
+?>
+
+<div class="card bg-dark text-white">
+    <img src="../../assets/img/wallpapers/forest-7459553_1280.jpg" class="card-img-introduction" alt="...">
+<div class="card-img-overlay">          
+        
+<div class="custom-font border-0 login-container " >
+    <div class="card-body text-center">
+        
+        <?php if (isset($mensajeBienvenida)) { ?>
+            <h1 class="mb-3 custom-font card-title text-center"><?php echo $mensajeBienvenida; ?></h1>
+            <?php } else { ?>
+            <h1>¡Eso ha estado genial!</h1>
+        <?php } ?>
+ 
+        <div>
+            <h3>¡Gracias por personalizar tu historia!</h3>
+            <p class="text-center">Ahora te mostraremos brevemente las elecciones que has tomado:</p>
+        </div>   
+
     
-    <p>El nombre del personaje principal será: <?php echo $protagonistName; ?></p>
-    <p>El nombre de su mejor amig@ será: <?php echo $bestFriendName; ?></p>
-    <p>El nombre de su enemig@ será: <?php echo $enemyName; ?></p>
-    <p>Su comida favoríta será: <?php echo $favoriteFood; ?></p>
-    <p>Su color favorito será el: <?php echo $favoriteColor; ?></p>
-    <p>Su número favorito será el: <?php echo $favoriteNumber; ?></p>
-    <p>¿Te gustan tus elecciones? Si es así haz click en "Comenzar la historia"</p>
-    <p>¿Prefieres cambiar algun dato? Haz click en "Editar"</p>
-     
-    <h5><a href="./viewEditForm.php">Editar</a></h5>
-    <h5><a href="./viewHistory.php">¡Comencemos la historia!</a></h5>
+        <section>           
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="">
+                        <div class="card-body">
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12"> 
+                                <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Nombre del Protagonista:</span> <?php echo $protagonistName; ?>
+                                </label>
+                                </div>  
+                                <div></div>                                 
+                            </div>
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12">                                    
+                                    <label class="form-label d-inline-block mb-1">
+                                        <span class="card-title">Nombre de su Mejor Amig@:</span> <?php echo $bestFriendName; ?>
+                                    </label>
+                                </div> 
+                                <div></div>    
+                            </div>
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12"> 
+                                    <label class="form-label d-inline-block mb-1">
+                                        <span class="card-title">Su color Favorito:</span> <?php echo $favoriteColor; ?>
+                                    </label>
+                                </div> 
+                                <div></div>    
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6">
+                    <div class="">
+                        <div class="card-body">
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12"> 
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Nombre de su Enemig@:</span> <?php echo $enemyName; ?></label>
+                                </div>  
+                                <div></div>                              
+                            </div>
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12"> 
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Su Comida Favoríta:</span> <?php echo $favoriteFood; ?></label>
+                                </div> 
+                                <div></div>     
+                            </div>
+
+                            <div class="mb-3 text-start row align-items-center">
+                                <div class="col-md-12"> 
+                                    <label class="form-label d-inline-block mb-1">
+                                    <span class="card-title">Su Número Favorito:</span> <?php echo $favoriteNumber; ?></label>
+                                </div>  
+                                <div></div>  
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>   
+
+    
+    <p>¿Te gustan tus elecciones? Si es así haz click en <a class="card-title" href="./viewHistory.php">¡Comenzar la historia!</a></p>
+    <p>¿Prefieres cambiar algun dato? Haz click en <a class="card-title" href="./viewEditForm.php">Editar</a></p>
+        
+    </div>
+        </div>
+        </div>
+        </div>  
+       
 
 <?php
     include ("../../templates/footer.php");
