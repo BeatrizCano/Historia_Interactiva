@@ -30,7 +30,7 @@
 
 
         <div class="card bg-dark text-white">
-            <img src="../../assets/img/wallpapers/ai-generated-8268570_1280.jpg" class="card-img-introduction" alt="...">
+            <img src="../../assets/img/wallpapers/path-7744063_1920.jpg" class="card-img-introduction" alt="...">
         <div class="card-img-overlay">          
         
         <div class="custom-font border-0 login-container mt-3" >
