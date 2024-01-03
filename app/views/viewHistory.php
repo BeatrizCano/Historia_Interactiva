@@ -10,7 +10,7 @@ include ("../../sections/session/sessionStart.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="../../public/css/styles.css">
-    <link rel="stylesheet" href="../../public/css/style8.css">
+    <link rel="stylesheet" href="../../public/css/styles8.css">
     
 </head>
 <body>

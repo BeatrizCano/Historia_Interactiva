@@ -3,7 +3,7 @@
 ?>
 
 <div class="card bg-dark text-white">
-    <img src="../../assets/img/wallpapers/magical-forest-7443155_1280.jpg" class="card-img-introduction" alt="...">
+    <img src="../../assets/img/wallpapers/flower-7111468_1920.jpg" class="card-img-introduction" alt="...">
 <div class="card-img-overlay">    
 
 <div class="custom-font border-0 login-container mt-3" >
