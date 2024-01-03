@@ -5,7 +5,7 @@
    
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/style8.css">  
+    <link rel="stylesheet" href="./public/css/styles8.css">  
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
