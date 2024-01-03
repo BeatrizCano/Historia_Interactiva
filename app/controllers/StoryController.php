@@ -2,15 +2,15 @@
 //session_start(); // Iniciar la sesión
 include ("../../config/Database.php");           
 
-function getUserIdAndNameForName($userName) {
+function getUserIdAndNameForEmail($email) {
     $connection = createConnection("interactive_history");
 
     // Consulta SQL para obtener el usuario_id y el nombre de usuario basado en el nombre de usuario
-    $sql = "SELECT usuario_id, nombre_usuario FROM usuarios WHERE nombre_usuario = ?";
+    $sql = "SELECT usuario_id, nombre_usuario FROM usuarios WHERE email = ?";
     
     // Usar sentencias preparadas para proteger contra inyección SQL
     $stmt = mysqli_prepare($connection, $sql);
-    mysqli_stmt_bind_param($stmt, "s", $userName);
+    mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
     
     // Obtener el resultado de la consulta
@@ -56,12 +56,12 @@ function  registerUser($name, $email, $password) {
 }
 
 
-function login($name, $password) {
+function login($email, $password) {
     $connection = createConnection("interactive_history");
     
-    $sql = "SELECT contrasena FROM usuarios WHERE nombre_usuario = ?";
+    $sql = "SELECT contrasena FROM usuarios WHERE email = ?";
     $stmt = mysqli_prepare($connection, $sql);
-    mysqli_stmt_bind_param($stmt, "s", $name);
+    mysqli_stmt_bind_param($stmt, "s", $email);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_bind_result($stmt, $hashedPassword);
     mysqli_stmt_fetch($stmt);

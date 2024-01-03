@@ -32,7 +32,8 @@
         <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="../../../index.php">Inicio</a>
             <a class="nav-link" href="../viewRegister.php">Registrarse</a>
-            <a class="nav-link" href="../viewLogin.php">Iniciar Sesión</a>            
+            <a class="nav-link" href="../viewLogin.php">Iniciar Sesión</a>   
+            <a class="nav-link" href="../viewEditForm.php">Editar personalización</a>         
             <a class="nav-link" href="../../../sections/session/logout.php">Cerrar Sesión</a>           
         </div>
         </div>

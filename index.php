@@ -51,8 +51,14 @@
                     que dirige a un ejército de robots. Sus aliados son l@s elefant@s, que habitan en un reino próximo. Y sus enemigos naturales son l@s raton@s, a quienes pertenecían las tierras 
                     en la antigüedad.</p>
                 <p class="card-text"> Nuestro protagonista es un@ pequeñ@ elefant@ recién llegado al reino de l@s gat@s. Las decisiones que tome, decidirán el futuro del mundo que conocen, para bien o para mal. 
-                    Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
-                <p class="card-text">Por favor, regístrate o inicia sesión para comenzar la aventura.¡Vamos a ello!</p>
+                    ¿Quieres ayudarle a decidir sabiamente? Su futuro está ahora en tus manos.</p>
+                <p class="card-text">
+                    Por favor, 
+                    <a href="./app/views/viewRegister.php" class="card-title">regístrate</a>
+                    o 
+                    <a href="./app/views/viewLogin.php" class="card-title">inicia sesión</a> 
+                    para comenzar la aventura.¡Vamos a ello!
+                </p>
             </div> 
         </div>
     </div>
