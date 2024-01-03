@@ -15,7 +15,7 @@ include ("../../templates/head.php");
 ?>
 
     <div class="card bg-dark text-white">
-        <img src="../../assets/img/wallpapers/fantasy-3232570_1280.jpg" class="card-img-introduction" alt="...">
+        <img src="../../assets/img/wallpapers/digital-graphicscat-6747298_1920.jpg" class="card-img-introduction" alt="...">
     <div class="card-img-overlay">
 
     
