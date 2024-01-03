@@ -35,12 +35,14 @@ include ("../../sections/session/sessionStart.php");
     </div>
     </nav>
 
-    <div class="card bg-dark text-white">
-        <img src="../../assets/img/wallpapers/ai-generated-8138068_1280.png" class="card-img-small" alt="...">
-        <div class="card-img-overlay">
-            <div class="custom-font border-0 login-container-history text-container">
-                <div class="card-body text-center">
-                    <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+<body>
+
+<div class="card bg-dark text-white">
+    <img src="../../assets/img/wallpapers/ai-generated-8138068_1280.png" class="card-img-small" alt="...">
+    <div class="card-img-overlay">
+        <div class="custom-font border-0 login-container-history text-container">
+            <div class="card-body text-center">
+                <div id="carouselExample" class="carousel slide" data-bs-interval="false">
 
                 <div>
                     <img src="../../assets/img/decorative_line.png" class="ornament_img">

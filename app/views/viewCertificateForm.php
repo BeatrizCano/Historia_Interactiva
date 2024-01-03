@@ -10,7 +10,7 @@
             <div class="card-body text-center">
 
 
-        <form id="certificateForm" action="../../sections/generateCertificate.php" method="POST" target="_blank">
+    <form action="../../sections/generateCertificate.php" method="POST">
 
         <div class="mb-4 text-start row align-items-center">        
             <div class="col-md-7">
@@ -20,38 +20,44 @@
                 <input type="text" name="name" class="form-control d-inline-block" placeholder="Introduce tu nombre" required>
             </div>           
         </div>
-        <div>
-            <input type="submit" class="button_general w-100" value="Generar Certificado">
+        <div class="">
+            <input type="submit" class="button_general" value="Generar Certificado">
         </div>
     </form>
 
-    <!-- Botón para volver a la historia después de enviar el formulario -->
-    <div class="mt-3">
-        <button class="button_certificate w-100" onclick="redirectToHistory()">Volver a la historia</button>
-    </div>
-    
-</div> 
     </div>
 </div>
 </div>
 </div>
+
 
     <?php
         include ("../../templates/footer.php");
     ?>    
         
 
-<script>
-    document.getElementById('certificateForm').addEventListener('submit', function() {
-        // No se requiere window.open aquí
-    });
-</script>
+<!-- Mostrar el mensaje de éxito si el certificado se ha generado -->
+<!--El mensaje de éxito se mostrará en la misma vista del formulario después de que el usuario haya generado y descargado el certificado-->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
+    $name = $_POST["name"];
+    
+    // Genera una imagen del certificado con el nombre
+    $certificateImg = generateCertificateImage($name);
+    
+    // Descargar la imagen del certificado generada
+    header('Content-Disposition: attachment; filename="certificadoHistoriaInteractiva.png"');
+    header("Content-type: image/png");
+    imagepng($certificateImg);
+    imagedestroy($certificateImg);
 
-<script>
-function redirectToHistory() {
-    window.location.href = "../views/viewAfterPersonalizationForm.php";
+    // Mostrar el mensaje de éxito
+    //echo '<p>¡Certificado generado y descargado exitosamente!</p>';
 }
-</script>       
+?>
+
+
+
 
 
 

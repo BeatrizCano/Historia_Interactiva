@@ -7,14 +7,14 @@ session_start();
 $error_message = ""; // Variable para almacenar el mensaje de error
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST["email"];
+    $name = $_POST["name"];
     $password = $_POST["password"];
 
     // Llamar a la función login() para verificar las credenciales
-    $loginResult = login($email, $password);
+    $loginResult = login($name, $password);
     if ($loginResult === true) {
         // Obtener el usuario_id y el nombre de usuario
-        $userInfo = getUserIdAndNameForEmail($email);
+        $userInfo = getUserIdAndNameForName($name);
     
         // Credenciales válidas, establecer las variables de sesión
         $_SESSION['usuario_id'] = $userInfo['usuario_id'];
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: ../views/viewAfterLogin.php");
         exit();
     } else {
-        $error_message = "Credenciales incorrectas"; // Asignar mensaje de error
+        $error_message = "Nombre de usuario o contraseña incorrectos"; // Asignar mensaje de error
     }
 }
 ?>
@@ -50,10 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <div class="mb-3 text-start row align-items-center">
                     <div class="col-md-3">
-                        <label for="email" class="form-label d-inline-block mb-1">Email:</label>
+                        <label for="name" class="form-label d-inline-block mb-1">Usuario:</label>
                     </div>
                     <div class="col-md-9">
-                        <input type="email" class="form-control d-inline-block" id="email" name="email" placeholder="Introduce tu email" required>
+                        <input type="text" class="form-control d-inline-block" id="name" name="name" placeholder="Introduce tu nombre" required>
                     </div>
                 </div>
 
