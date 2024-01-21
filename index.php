@@ -4,11 +4,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Agrega la metaetiqueta de viewport de Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Interactiva</title>
-    <link rel="stylesheet" href="./public/css/styles9.css"> 
+    <!-- Agrega los enlaces a los archivos de Bootstrap CSS y JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./public/css/styles9.css">
+    
 </head>
 <body>
+
+ <!-- Capa de advertencia -->
+ <div id="mensajeVertical">
+        <img src="./assets/img/logoColor.png" alt="Imagen de advertencia">
+        <h1 class="h3 my-5">Por favor, gire su dispositivo a posición horizontal</h1>
+    </div>
+
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -28,9 +43,10 @@
         </div>
     </div>
     </nav>
+
     
 
-    <div class="card bg-dark">
+    <div class="card bg-dark ">
         <img src="./assets/img/wallpapers/background-balcon.jpg" class="card-img-introduction" alt="...">
     <div class="card-img-overlay" >
 
@@ -64,7 +80,11 @@
 </div>
 </div>
 
+
 <?php
         include ("./templates/footer.php");
     ?>
+
+
+
     
