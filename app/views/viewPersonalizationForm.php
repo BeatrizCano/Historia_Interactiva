@@ -33,7 +33,7 @@
             <img src="../../assets/img/wallpapers/path-7744063_1920.jpg" class="card-img-introduction" alt="...">
         <div class="card-img-overlay">          
         
-        <div class="custom-font border-0 login-container mt-3" >
+        <div class="custom-font border-0 login-container mt-3 col-md-11" >
             <div class="card-body text-center">
                 <h1 class="mb-3 custom-font card-title text-center">Introduce los datos de personalización</h1>
 

@@ -59,22 +59,15 @@
     
 }
 
-.card,
+
 .card .card-text {
     font-size: 15px; /* Ajusta el tamaño de fuente según tu preferencia */
     color: #fffaf2;  
-}
-
-.card .card-text {
     margin-bottom: 1rem; /* Añade un pequeño espacio entre párrafos */
 }
 
 .card .card-text:last-child {
     margin-bottom: 0; /* Elimina el espacio después del último párrafo */
-}
-
-.card-color-green {
-    color: #61e577;
 }
 
 /*.card-title {
@@ -150,3 +143,4 @@
     box-shadow: #ffffff;
    
 }
+
