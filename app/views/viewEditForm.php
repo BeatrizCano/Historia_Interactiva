@@ -34,7 +34,7 @@
             <img src="../../assets/img/wallpapers/girl-7639878_1280.jpg" class="card-img-introduction" alt="...">
         <div class="card-img-overlay">          
         
-        <div class="custom-font border-0 login-container mt-3" >
+        <div class="custom-font border-0 login-container mt-3 col-md-11" >
             <div class="card-body text-center">
                 <h1 class="mb-3 custom-font card-title text-center">Edición de Personalización</h1>
 

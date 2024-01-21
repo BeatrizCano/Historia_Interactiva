@@ -13,7 +13,7 @@ include ("../../../../sections/session/sessionStart.php");
 <div class="card bg-dark text-white">
     <img src="../../../../assets/img/wallpapers/cat-3552048_1280.png" class="card-img" alt="...">
     <div class="card-img-overlay">
-        <div class="custom-font border-0 login-container-history text-container">
+        <div class="custom-font border-0 login-container-history text-container col-md-9">
             <div class="card-body text-center">
                 <div id="carouselExample" class="carousel slide" data-bs-interval="false">
                 <div>
