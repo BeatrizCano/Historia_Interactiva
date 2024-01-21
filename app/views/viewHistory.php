@@ -10,7 +10,7 @@ include ("../../sections/session/sessionStart.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Interactiva</title>
     <link rel="stylesheet" href="../../public/css/styles.css">
-    <link rel="stylesheet" href="../../public/css/styles8.css">
+    <link rel="stylesheet" href="../../public/css/styles9.css">
     
 </head>
 <body>
@@ -38,7 +38,7 @@ include ("../../sections/session/sessionStart.php");
     <div class="card bg-dark text-white">
         <img src="../../assets/img/wallpapers/Elephant_face.png" class="card-img-small" alt="...">
         <div class="card-img-overlay">
-            <div class="custom-font border-0 login-container-history text-container">
+            <div class="custom-font border-0 login-container-history text-container col-md-9 ">
                 <div class="card-body text-center">
                     <div id="carouselExample" class="carousel slide" data-bs-interval="false">
 
