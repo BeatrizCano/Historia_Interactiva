@@ -9,28 +9,40 @@
     <script>
         $(document).ready(function() {
             // Verifica la orientación inicial al cargar la página
-            verificarOrientacion();
+            verifyOrientation();
 
             // Agrega un evento para detectar cambios en la orientación
             window.addEventListener('orientationchange', function() {
-                verificarOrientacion();
+                verifyOrientation();
             });
+
+            // Verifica si es un dispositivo móvil
+            if (isMobileDevice()) {
+                $("#mobileMessage").show();
+            }
         });
 
-        function verificarOrientacion() {
+        function verifyOrientation() {
             // Obtiene la orientación actual
-            var orientacion = window.orientation;
+            var orientation = window.orientation;
 
             // Muestra la capa de advertencia si la orientación es vertical
-            if (orientacion === 0 || orientacion === 180) {
-                $("#mensajeVertical").show();
+            if (orientation === 0 || orientation === 180) {
+                $("#verticalMessage").show();
             } else {
                 // Oculta la capa de advertencia si la orientación es horizontal
-                $("#mensajeVertical").hide();
+                $("#verticalMessage").hide();
             }
         }
+
+        function isMobileDevice() {
+            // Verifica si el dispositivo es un dispositivo móvil (ajusta la medida según sea necesario)
+            // y también si está en orientación horizontal
+            return window.innerWidth < 768 || (window.innerWidth < 1024 && window.orientation === 90);
+        }
     </script>
-    
+
+
     <!--Enlace de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

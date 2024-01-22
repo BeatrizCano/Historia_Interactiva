@@ -12,15 +12,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./public/css/styles9.css">
+    <link rel="stylesheet" href="./public/css/style9.css">
     
 </head>
 <body>
 
- <!-- Capa de advertencia -->
- <div id="mensajeVertical">
+    <!-- Capa de advertencia para orientación vertical -->
+    <div id="verticalMessage">
         <img src="./assets/img/logoColor.png" alt="Imagen de advertencia">
-        <h1 class="h3 my-5">Por favor, gire su dispositivo a posición horizontal</h1>
+        <h2 class="my-5">Por favor, gire su dispositivo a posición horizontal</h2>
+    </div>
+
+    <!-- Capa de advertencia para dispositivos móviles -->
+    <div id="mobileMessage">
+        <img src="./assets/img/logoColor.png" alt="Imagen de advertencia">
+        <h4>Por favor, utiliza un dispositivo <br> tablet o desktop</h4>
     </div>
 
     
@@ -42,9 +48,7 @@
         </div>
         </div>
     </div>
-    </nav>
-
-    
+    </nav>    
 
     <div class="card bg-dark ">
         <img src="./assets/img/wallpapers/background-balcon.jpg" class="card-img-introduction" alt="...">
@@ -79,7 +83,6 @@
     </div>
 </div>
 </div>
-
 
 <?php
         include ("./templates/footer.php");
