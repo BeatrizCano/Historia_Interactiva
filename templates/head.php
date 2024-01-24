@@ -28,12 +28,4 @@
     </div>
     </nav>
 
-                <!--<ul>
-                    <li><a href="../../index.php">Inicio</a></li>
-                    <li><a href="../../app/views/viewLogin.php">Iniciar sesión</a></li>
-                    <li><a href="../../app/views/viewRegister.php">Registrarse</a></li>
-                    <li><a href="../../app/views/viewCertificateForm.php">Certificado</a></li>-->
-                    <!--hay que salir de la carpeta sections y volver a entrar para que funcione la redirección-->          
-                   <!-- <li><a href="../../sections/session/logout.php">Cerrar Sesión</a></li>
-                    
-                </ul>-->
+                

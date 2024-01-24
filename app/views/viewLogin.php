@@ -1,33 +1,29 @@
-<!-- view_login.php -->
 <?php
 
 include ("../controllers/StoryController.php");
 session_start();
 
-$error_message = ""; // Variable para almacenar el mensaje de error
+$error_message = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
-
-    // Llamar a la función login() para verificar las credenciales
+   
     $loginResult = login($email, $password);
-    if ($loginResult === true) {
-        // Obtener el usuario_id y el nombre de usuario
-        $userInfo = getUserIdAndNameForEmail($email);
-    
-        // Credenciales válidas, establecer las variables de sesión
+    if ($loginResult === true) {        
+        $userInfo = getUserIdAndNameForEmail($email);    
+        
         $_SESSION['usuario_id'] = $userInfo['usuario_id'];
         $_SESSION['nombre_usuario'] = $userInfo['nombre_usuario'];
         header("Location: ../views/viewAfterLogin.php");
         exit();
     } else {
-        $error_message = "Credenciales incorrectas"; // Asignar mensaje de error
+        $error_message = "Credenciales incorrectas"; 
     }
 }
 ?>
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 
@@ -90,6 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 <?php
-    include ("../../templates/footer.php");
+include ("../../templates/footer.php");
 ?>
 

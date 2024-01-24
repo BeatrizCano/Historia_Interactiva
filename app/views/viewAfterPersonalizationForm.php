@@ -2,7 +2,6 @@
 include ("../controllers/StoryController.php");
 session_start();
 
-// Iniciar sesión
 if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
     $usuarioId = $_SESSION['usuario_id'];
     $nombreUsuario = $_SESSION['nombre_usuario'];
@@ -13,10 +12,9 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
 ?>
 
 <?php
-    // Obtener la primera historia de la tabla historias
+   
     $connection = createConnection("interactive_history");
 
-    // Obtener los datos de personalización del usuario desde la tabla personalizacion_historia
     $userId = $_SESSION['usuario_id'];
     $personalizationSql = "SELECT nombre_protagonista, nombre_mejor_amigo, nombre_enemigo, comida_favorita, color_favorito, numero_favorito
      FROM personalizacion_historia WHERE usuario_id = ?";
@@ -34,15 +32,14 @@ if (isset($_SESSION['usuario_id'], $_SESSION['nombre_usuario'])) {
         $favoriteColor = $row['color_favorito'];
         $favoriteNumber = $row['numero_favorito'];
     } else {
-        // Manejar el caso en que no se encuentren datos de personalización
+       
     }
     mysqli_stmt_close($stmt);
     
-    // Resto de tu código...
 ?>
 
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 <div class="card bg-dark text-white">

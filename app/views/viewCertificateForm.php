@@ -1,5 +1,5 @@
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 <div class="card bg-dark text-white">
@@ -25,7 +25,6 @@
         </div>
     </form>
 
-    <!-- Botón para volver a la historia después de enviar el formulario -->
     <div class="mt-3">
         <button class="button_certificate w-100" onclick="redirectToHistory()">Volver a la historia</button>
     </div>
@@ -36,14 +35,14 @@
 </div>
 </div>
 
-    <?php
-        include ("../../templates/footer.php");
-    ?>    
+<?php
+include ("../../templates/footer.php");
+?>    
         
 
 <script>
     document.getElementById('certificateForm').addEventListener('submit', function() {
-        // No se requiere window.open aquí
+        
     });
 </script>
 

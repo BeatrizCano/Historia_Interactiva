@@ -1,4 +1,3 @@
-<!--restringido a introducir la dirección de email una sola vez al registrarse-->
 <?php
 include ("../controllers/StoryController.php");
 session_start();
@@ -8,11 +7,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    // Verificar si el correo electrónico ya está registrado
     if (isEmailRegistered($email)) {
         $error_message = "El correo electrónico ya está registrado.";
     } else {
-        // Llamar a la función registerUser() y luego iniciar sesión con el usuario recién registrado
+        
         if (registerUser($name, $email, $password)) {
             $userInfo = getUserIdAndNameForName($name);
             $_SESSION['usuario_id'] = $userInfo['usuario_id'];
@@ -27,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <?php
-    include ("../../templates/head.php");
+include ("../../templates/head.php");
 ?>
 
 
@@ -94,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 </div>
 
-    <?php
-        include ("../../templates/footer.php");
-    ?>
+<?php
+include ("../../templates/footer.php");
+?>
 

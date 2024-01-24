@@ -1,14 +1,13 @@
 <?php
-//include ("../controllers/StoryController.php");
 include ("../../../config/Database.php");
-//incluir el archivo de inicio de sesión
 include ("../../../sections/session/sessionStart.php");
 ?>
 
 <?php
-    include ("../../../templates/headViewsChoice.php");
+include ("../../../templates/headViewsChoice.php");
 ?>
-   <body>
+   
+<body>
 
 <div class="card bg-dark text-white">
     <img src="../../../assets/img/wallpapers/animal-1297724_1280.png" class="card-img-small" alt="...">
@@ -23,16 +22,12 @@ include ("../../../sections/session/sessionStart.php");
                         <div class="carousel-item active">
 
                         <?php
-                            // Incluir tus funciones y archivos necesarios aquí
-
-                            // Obtener la historia 2 de la tabla historias
+                           
                             $connection = createConnection("interactive_history");
-                            $storyId = 6; // Cambia esto por el ID de la historia que deseas obtener
-
-                            //Para incluir todas las consultas a las tablas y la lógica
+                            $storyId = 6; 
+                            
                             include ("../../../sections/querys/queryViewHistoryChoice.php");
-
-                            // Mostrar el título y contenido de la primera historia
+                            
                             echo "<h1 class='card-title text-center'>$storyTitle</h1>";
                             $storyContent = str_replace('\n', '<br>', $storyContent);
                             echo "<p class='text-start'>$storyContent</p>";
@@ -44,18 +39,18 @@ include ("../../../sections/session/sessionStart.php");
 
                             <form action="viewHistory.php" method="POST">
                                 <h2 class='card-title text-center'>Elige una de las siguientes opciones:</h2>
+
                                 <?php
                                 $connection = createConnection("interactive_history");
-
-                                // Para incluir todas las consultas a las tablas y la lógica
+                                
                                 include("../../../sections/querys/queryViewOptions.php");
-
-                                // Imprimir todos los textos de opciones
+                               
                                 foreach ($optionTexts as $optionText) {
                                     $optionText = str_replace('\n', '<br>',  $optionText);
                                     echo "<p class='text-start'>$optionText</p>";
                                 }
                                 ?>
+                                
                             </form>
 
                             <div>

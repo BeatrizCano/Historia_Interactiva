@@ -1,13 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Agrega la metaetiqueta de viewport de Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Interactiva</title>
-    <!-- Agrega los enlaces a los archivos de Bootstrap CSS y JS -->
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -17,13 +14,11 @@
 </head>
 <body>
 
-    <!-- Capa de advertencia para orientación vertical -->
     <div id="verticalMessage">
         <img src="./assets/img/logoColor.png" alt="Imagen de advertencia">
         <h2 class="my-5">Por favor, gire su dispositivo a posición horizontal</h2>
     </div>
 
-    <!-- Capa de advertencia para dispositivos móviles -->
     <div id="mobileMessage">
         <img src="./assets/img/logoColor.png" alt="Imagen de advertencia">
         <h4>Por favor, utiliza un dispositivo <br> tablet o desktop</h4>
@@ -85,8 +80,8 @@
 </div>
 
 <?php
-        include ("./templates/footer.php");
-    ?>
+include ("./templates/footer.php");
+?>
 
 
 

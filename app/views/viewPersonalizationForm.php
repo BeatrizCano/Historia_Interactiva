@@ -12,15 +12,12 @@
         $favoriteFood = $_POST["favorite_food"];
         $favoriteColor = $_POST["favorite_color"];
         $favoriteNumber = $_POST["favorite_number"];
-        $historiaId = $_POST["historia_id"];
-        
-        // para almacenar la sesión de usuario
+        $historiaId = $_POST["historia_id"];        
+       
         $usuarioId = $_SESSION['usuario_id'];
         personalizationData($usuarioId, $historiaId, $protagonist, $bestFriend, $worstEnemy, $favoriteFood, $favoriteColor, $favoriteNumber);
 
-        // Redirigir al usuario a la vista view_story.php
-        header("Location: ../views/viewAfterPersonalizationForm.php");   
-        
+        header("Location: ../views/viewAfterPersonalizationForm.php");          
     }
 ?>
     
